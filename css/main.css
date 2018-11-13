@@ -18,38 +18,33 @@ html {
   box-sizing: inherit;
 }
 
+img:nth-child(2), img:nth-child(4) {
+  display: none;
+}
+
 img {
-  margin: .5em;
   width: 100%;
 }
 
 @media only screen and (min-width: 25em) {
 
-  img:nth-child(1), img:nth-child(2) {
-    display: none;
-  }
-
-  img {
-    display: block;
-    max-width: 97%;
-  }
-
-}
-
-@media only screen and (min-width: 38em) {
-
-  img:nth-child(1), img:nth-child(2) {
+  img:nth-child(2), img:nth-child(4) {
     display: inline-block;
     }
 
     img {
       display: inline-block;
-      max-width: 49.5%;
-      margin: 0;
+      max-width: 49.4%;
     }
 
-@media only screen and (min-width: 60em)
-{
+}
+
+@media only screen and (min-width: 38em) {
+
+
+}
+
+@media only screen and (min-width: 60em) {
 
   img:nth-child(1) {
     display: none;
@@ -58,4 +53,6 @@ img {
   img {
     display: inline-block;
     max-width: 33%;
+  }
+
 }
